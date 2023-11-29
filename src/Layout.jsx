@@ -48,6 +48,7 @@ const Layout = ({ children }) => {
       }
     };
     fetchUser();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   const user = useSelector((state) => state.auth.user);
