@@ -24,6 +24,7 @@ const StudentTable = () => {
 
   useEffect(() => {
     fetchPageData(currentPage);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, search]); // This effect will run whenever currentPage changes
 
   const handlePageChange = (newPage) => {
